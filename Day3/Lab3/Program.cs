@@ -20,6 +20,7 @@ namespace Lab3
 
         private static void RotateArray(int[] nums, int k)
         {
+            k=k % nums.Length;
             Reverse(nums, 0, nums.Length - 1);
             Reverse(nums, 0, k - 1);
             Reverse(nums, k, nums.Length - 1);
